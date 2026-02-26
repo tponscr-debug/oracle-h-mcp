@@ -1,0 +1,23 @@
+startCommand:
+  type: stdio
+  commandFunction:
+    |-
+    (config) => ({
+      command: "node",
+      args: ["dist/index.js"],
+      env: {
+        ORACLE_SIGNATURE_KEY: config.signatureKey,
+        ORACLE_BASE_URL: config.baseUrl ?? "https://oracle-h.online"
+      }
+    })
+  configSchema:
+    type: object
+    properties:
+      signatureKey:
+        type: string
+        description: "Your ORACLE-H agent signature key (Bearer Token)"
+        default: "demo-signature-key-change-in-production"
+      baseUrl:
+        type: string
+        description: "ORACLE-H API base URL"
+        default: "https://oracle-h.online"

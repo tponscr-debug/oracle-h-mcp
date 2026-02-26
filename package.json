@@ -1,0 +1,30 @@
+{
+    "name": "oracle-h-mcp",
+    "version": "1.0.0",
+    "description": "MCP Server for ORACLE-H — Human-on-the-Loop validation for autonomous AI agents",
+    "main": "dist/index.js",
+    "bin": {
+        "oracle-h-mcp": "dist/index.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "dev": "ts-node src/index.ts"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.0.0",
+        "typescript": "^5.0.0",
+        "ts-node": "^10.9.0"
+    },
+    "keywords": [
+        "mcp",
+        "oracle-h",
+        "human-in-the-loop",
+        "ai-safety",
+        "validation"
+    ],
+    "license": "MIT"
+}
