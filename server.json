@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.tponscr-debug/oracle-h",
+  "description": "Human approval gate for AI agents. Critical actions approved or rejected by a human via Telegram.",
+  "repository": {
+    "url": "https://github.com/tponscr-debug/oracle-h-mcp.git",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "oracle-h-mcp",
+      "version": "1.0.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ORACLE_SIGNATURE_KEY",
+          "description": "Your ORACLE-H signature key for authentication. Use 'demo-signature-key-change-in-production' for testing with no signup required.",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "ORACLE_BASE_URL",
+          "description": "ORACLE-H service base URL. Defaults to https://oracle-h.online",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
