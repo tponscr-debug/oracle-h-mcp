@@ -1,6 +1,7 @@
 {
     "name": "oracle-h-mcp",
     "version": "1.0.0",
+    "mcpName": "io.github.tponscr-debug/oracle-h",
     "description": "MCP Server for ORACLE-H — Human-on-the-Loop validation for autonomous AI agents",
     "main": "dist/index.js",
     "bin": {
@@ -21,10 +22,36 @@
     },
     "keywords": [
         "mcp",
-        "oracle-h",
+        "model-context-protocol",
         "human-in-the-loop",
+        "human-on-the-loop",
         "ai-safety",
-        "validation"
+        "ai-agent",
+        "autonomous-agent",
+        "agent-validation",
+        "approval-workflow",
+        "telegram",
+        "claude",
+        "cursor",
+        "windsurf",
+        "cline",
+        "agentic-ai",
+        "oversight",
+        "validation",
+        "checkpoint",
+        "mcp-server"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tponscr-debug/oracle-h-mcp"
+    },
+    "homepage": "https://oracle-h.online",
+    "bugs": {
+        "url": "https://github.com/tponscr-debug/oracle-h-mcp/issues"
+    },
+    "author": "tponscr-debug",
+    "engines": {
+        "node": ">=18.0.0"
+    },
     "license": "MIT"
 }
