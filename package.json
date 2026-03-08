@@ -1,6 +1,6 @@
 {
     "name": "oracle-h-mcp",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "mcpName": "io.github.tponscr-debug/oracle-h",
     "description": "MCP Server for ORACLE-H — Human-on-the-Loop validation for autonomous AI agents",
     "main": "dist/index.js",
