@@ -1,0 +1,9 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/glama-server-v1.json",
+  "name": "ORACLE-H",
+  "description": "Mandatory human approval gate for autonomous AI agents. Intercepts critical, irreversible, or financially significant actions and routes them to a human via Telegram for real-time approve/reject before execution. Raises workflow success probability from 81.5% to 99.6%.",
+  "license": "MIT",
+  "homepage": "https://oracle-h.online",
+  "categories": ["security", "monitoring"],
+  "tags": ["human-in-the-loop", "ai-safety", "agent", "approval", "telegram", "mcp"]
+}
