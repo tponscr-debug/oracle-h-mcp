@@ -74,15 +74,15 @@ Add to your MCP settings:
 
 ### Cline (VS Code)
 
-Add to `cline_mcp_settings.json`:
 ```json
+// File: cline_mcp_settings.json
 {
   "mcpServers": {
     "oracle-h": {
       "command": "npx",
       "args": ["-y", "oracle-h-mcp"],
       "env": {
-        "ORACLE_SIGNATURE_KEY": "<your-signature-key>",
+        "ORACLE_SIGNATURE_KEY": "demo-signature-key-change-in-production",
         "ORACLE_BASE_URL": "https://oracle-h.online"
       }
     }
@@ -92,15 +92,15 @@ Add to `cline_mcp_settings.json`:
 
 ### Roo Code (VS Code)
 
-Add to `.roo/mcp.json` (project-level) or global MCP settings:
 ```json
+// File: .roo/mcp.json (project-level)
 {
   "mcpServers": {
     "oracle-h": {
       "command": "npx",
       "args": ["-y", "oracle-h-mcp"],
       "env": {
-        "ORACLE_SIGNATURE_KEY": "<your-signature-key>",
+        "ORACLE_SIGNATURE_KEY": "demo-signature-key-change-in-production",
         "ORACLE_BASE_URL": "https://oracle-h.online"
       }
     }
@@ -110,21 +110,29 @@ Add to `.roo/mcp.json` (project-level) or global MCP settings:
 
 ### GitHub Copilot (VS Code)
 
-Add to VS Code MCP settings (`settings.json`):
+Add to VS Code settings.json:
 ```json
 {
-  "github.copilot.mcp": {
+  "github.copilot.chat.mcp.servers": {
     "oracle-h": {
       "command": "npx",
       "args": ["-y", "oracle-h-mcp"],
       "env": {
-        "ORACLE_SIGNATURE_KEY": "<your-signature-key>",
+        "ORACLE_SIGNATURE_KEY": "demo-signature-key-change-in-production",
         "ORACLE_BASE_URL": "https://oracle-h.online"
       }
     }
   }
 }
 ```
+
+### n8n
+
+Use the MCP Client Tool node in n8n, running via supergateway:
+```bash
+npx -y supergateway --stdio "npx -y oracle-h-mcp" --port 8811
+```
+Then connect n8n's MCP Client Tool to http://localhost:8811/sse
 
 ### Zed Editor
 
