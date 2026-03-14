@@ -18,6 +18,10 @@ Agent → oracle_validate → Human gets Telegram alert → Approve/Reject → A
 **Without ORACLE-H**: 4-step workflow succeeds ~81.5% of the time.
 **With ORACLE-H**: Same workflow succeeds ~99.6% of the time.
 
+<a href="https://glama.ai/mcp/servers/tponscr-debug/mcp-oracle-h">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/tponscr-debug/mcp-oracle-h/badge" alt="mcp-oracle-h MCP server" />
+</a>
+
 ## MCP Tools
 
 | Tool | Description |
